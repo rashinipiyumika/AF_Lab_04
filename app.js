@@ -34,5 +34,17 @@ const https = require('https'); https.get('https://jsonplaceholder.typicode.com/
     console.log("Error: " + err.message); 
 }); 
 
+const myPromise = new Promise((resolve, reject) => {   
+    if (condition) {     resolve('Success!');   
+
+    } else {     
+        reject('Failure!');   
+    } 
+   });  
+    myPromise.then((result) => {   
+        console.log(result); 
+   }).catch((error) => {   
+        console.log(error); 
+   }); 
 const myModule = require('./my-module.js'); 
 console.log(myModule.myFunction()); 
