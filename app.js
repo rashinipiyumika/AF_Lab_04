@@ -33,3 +33,6 @@ const https = require('https'); https.get('https://jsonplaceholder.typicode.com/
 }).on('error', (err) => {   
     console.log("Error: " + err.message); 
 }); 
+
+const myModule = require('./my-module.js'); 
+console.log(myModule.myFunction()); 
