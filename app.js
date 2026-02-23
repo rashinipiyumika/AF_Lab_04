@@ -7,17 +7,17 @@ fs.readFile('file.txt', 'utf8', function (err, data) {
 const http = require('http'); 
 http.createServer(function (req, res) {   
     res.writeHead(200, {'Content-Type': 'text/html'});   
-    res.write('Hello World!');   res.end(); 
+    res.write('Hello !');   res.end(); 
 }).listen(8080);
 
 const http = require('http'); 
 http.createServer(function (req, res) {   
     res.writeHead(200, {'Content-Type': 'text/html'});   
-    res.write('Hello World!');   
+    res.write('Hello ');   
     res.end(); 
 }).listen(8080);
 const fs = require('fs'); 
-fs.writeFile('file.txt', 'Hello World!', function (err) {   
+fs.writeFile('file.txt', 'Hello', function (err) {   
     if (err) throw err;   
     console.log('File saved!'); 
 }); 
